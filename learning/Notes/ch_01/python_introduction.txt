@@ -1,0 +1,394 @@
+Introduction about Programming
+------------
+
+	Good code is short, fast, elegant, easy to read and understand, simple, easy to modify
+and extend, easy to scale and refactor, and easy to test. It takes time to be able to write
+code that has all these qualities at the same time.
+
+	If you write a piece of software that allows people to buy clothes online, you will have
+to represent real people, real clothes, real brands, sizes, and so on and so forth, within
+the boundaries of a program.
+
+	In order to do so, you will need to create and handle objects in the program you're
+writing. A person can be an object. A car is an object. A pair of socks is an object.
+Luckily, Python understands objects very well.
+
+	The two main features any object has are properties and methods. Let's take a person
+object as an example. Typically in a computer program, you'll represent people as
+customers or employees. The properties that you store against them are things like
+the name, the SSN, the age, if they have a driving license, their email, gender, and so
+on. In a computer program, you store all the data you need in order to use an object
+for the purpose you're serving. If you are coding a website to sell clothes, you
+probably want to store the heights and weights as well as other measures of your
+customers so that you can suggest the appropriate clothes for them. So, properties are
+characteristics of an object. We use them all the time: Could you pass me that
+pen?—Which one?—The black one. Here, we used the black property of a pen to identify
+it (most likely among a blue and a red one).
+
+	Methods are things that an object can do. As a person, I have methods such as speak,
+walk, sleep, wake up, eat, dream, write, read, and so on. All the things that I can do could
+be seen as methods of the objects that represent me.
+
+	According to the Data Model chapter on the official Python documentation ( https:/​ /
+docs.​ python.​ org/​ 3/​ reference/​ datamodel.​ html ):
+	"Objects are Python's abstraction for data. All data in a Python program is
+	represented by objects or by relations between objects."
+	
+	For now, all we need to know is that every object in Python has an ID (or identity), a
+type, and a value.
+Once created, the ID of an object is never changed. It's a unique identifier for it, and
+it's used behind the scenes by Python to retrieve the object when we want to use it.
+The type, as well, never changes. The type tells what operations are supported by the
+object and the possible values that can be assigned to it.
+
+	The value can either change or not. If it can, the object is said to be mutable, while
+when it cannot, the object is said to be immutable.
+
+
+Python Introduction:
+--------------------
+Python is the marvelous creation of Guido Van Rossum, a Dutch computer scientist
+and mathematician who decided to gift the world with a project he was playing
+around with over Christmas 1989. The language appeared to the public somewhere
+around 1991, and since then has evolved to be one of the leading programming
+languages used worldwide today.
+
+About Python:
+-------------
+Python essentially having the following qualities.
+
+Portability
+Python runs everywhere, and porting a program from Linux to Windows or Mac is
+usually just a matter of fixing paths and settings. Python is designed for portability
+and it takes care of specific operating system (OS) quirks behind interfaces that
+shield you from the pain of having to write code tailored to a specific platform.
+
+Coherence
+Python is extremely logical and coherent. You can see it was designed by a brilliant
+computer scientist. Most of the time, you can just guess how a method is called, if you
+don't know it.
+
+Developer productivity
+According to Mark Lutz (Learning Python, 5th Edition, O'Reilly Media), a Python
+program is typically one-fifth to one-third the size of equivalent Java or C++ code.
+This means the job gets done faster. And faster is good. Faster means a faster response
+on the market. Less code not only means less code to write, but also less code to read
+(and professional coders read much more than they write), less code to maintain, to
+debug, and to refactor.
+Another important aspect is that Python runs without the need for lengthy and time-
+consuming compilation and linkage steps, so you don't have to wait to see the results
+of your work.
+
+An extensive library
+Python has an incredibly wide standard library (it's said to come with batteries
+included). If that wasn't enough, the Python community all over the world maintains a
+body of third-party libraries, tailored to specific needs, which you can access freely at
+the Python Package Index (PyPI). When you code Python and you realize that you
+need a certain feature, in most cases, there is at least one library where that feature
+has already been implemented for you.
+
+Software quality
+Python is heavily focused on readability, coherence, and quality. The language
+uniformity allows for high readability and this is crucial nowadays where coding is
+more of a collective effort than a solo endeavor. Another important aspect of Python
+is its intrinsic multiparadigm nature. You can use it as a scripting language, but you
+also can exploit object-oriented, imperative, and functional programming styles. It is
+versatile.
+
+Software integration
+Another important aspect is that Python can be extended and integrated with many
+other languages, which means that even when a company is using a different
+language as their mainstream tool, Python can come in and act as a glue agent
+between complex applications that need to talk to each other in some way. This is
+kind of an advanced topic, but in the real world, this feature is very important.	
+	
+What are the drawbacks?
+Probably, the only drawback that one could find in Python, which is not due to
+personal preferences, is its execution speed. Typically, Python is slower than its
+compiled brothers. The standard implementation of Python produces, when you run
+an application, a compiled version of the source code called byte code (with the
+extension .pyc ), which is then run by the Python interpreter.
+The advantage of this approach is portability, which we pay for with a slowdown due
+to the fact that Python is not compiled down to machine level as are other languages.
+
+However, Python speed is rarely a problem today, hence its wide use regardless of
+this suboptimal feature. What happens is that, in real life, hardware cost is no longer a
+problem, and usually it's easy enough to gain speed by parallelizing tasks. Moreover,
+many programs spend a great proportion of the time waiting for IO operations to
+complete; therefore, the raw execution speed is often a secondary factor to the overall
+performance. When it comes to number crunching though, one can switch to faster
+Python implementations, such as PyPy, which provides an average five-fold speedup
+by implementing advanced compilation techniques (check http://pypy.org/ for
+reference).
+When doing data science, you'll most likely find that the libraries that you use with
+Python, such as Pandas and NumPy, achieve native speed due to the way they are
+implemented.
+If that wasn't a good-enough argument, you can always consider that Python has
+been used to drive the backend of services such as Spotify and Instagram, where
+performance is a concern. Nonetheless, Python has done its job perfectly adequately.	
+	
+Who is using Python today?
+Not yet convinced? Let's take a very brief look at the companies that are using Python
+today: Google, YouTube, Dropbox, Yahoo!, Zope Corporation, Industrial Light &
+Magic, Walt Disney Feature Animation, Blender 3D, Pixar, NASA, the NSA, Red Hat,
+Nokia, IBM, Netflix, Yelp, Intel, Cisco, HP, Qualcomm, and JPMorgan Chase, to name
+just a few.
+Even games such as Battlefield 2, Civilization IV, and QuArK are implemented using
+Python.
+Python is used in many different contexts, such as system programming, web
+programming, GUI applications, gaming and robotics, rapid prototyping, system
+integration, data science, database applications, and much more. Several prestigious
+universities have also adopted Python as their main language in computer science
+courses.
+
+=============================================================================================
+Setting up the environment
+--------------------------
+
+
+Setting up the environment
+
+install python3 on linux if it is not available
+------------------------------------------------------
+python interactivev shell:
+
+vb-om@ubuntu-20:~$ python3
+Python 3.8.10 (default, Nov 22 2023, 10:22:35) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 2 + 4
+6
+>>> 10 / 4
+2.5
+>>> 2 ** 1024 //2 power 1024
+1797693134862315907729305190789024733617976978942306572734300811577326
+7580550096313270847732240753602112011387987139335765878976881441662249
+2847430639474124377767893424865485276302219601246094119453082952085005
+7688381506823424628814739131105408272371633505106845862982399472459384
+79716304835356329624224137216
+
+Those >>> are the prompt of the shell. They tell you that Python is waiting for you to
+type something. If you type a simple instruction, something that fits in one line, that's
+all you'll see. However, if you type something that requires more than one line of
+code, the shell will change the prompt to ... , giving you a visual clue that you're
+typing a multiline statement (or anything that would require more than one line of
+code).
+------------------------------------------------------
+Virtualenv Setup
+
+You install Python on your system and you start working on a website for Client X.
+You create a project folder and start coding. Along the way, you also install some
+libraries; for example, the Django framework, which we'll see in depth in Chapter 14 ,
+Web Development. Let's say the Django version you install for Project X is 1.7.1.
+
+Now, your website is so good that you get another client, Y. She wants you to build
+another website, so you start Project Y and, along the way, you need to install Django
+again. The only issue is that now the Django version is 1.8 and you cannot install it on
+your system because this would replace the version you installed for Project X. You
+don't want to risk introducing incompatibility issues, so you have two choices: either
+you stick with the version you have currently on your machine, or you upgrade it and
+make sure the first project is still fully working correctly with the new version.
+
+Let's be honest, neither of these options is very appealing, right? Definitely not. So,
+here's the solution: virtualenv!
+
+virtualenv is a tool that allows you to create a virtual environment. In other words, it
+is a tool to create isolated Python environments, each of which is a folder that
+contains all the necessary executables to use the packages that a Python project would
+need (think of packages as libraries for the time being).
+
+So you create a virtual environment for Project X, install all the dependencies, and
+then you create a virtual environment for Project Y, installing all its dependencies
+without the slightest worry because every library you install ends up within the
+boundaries of the appropriate virtual environment. In our example, Project X will
+hold Django 1.7.1, while Project Y will hold Django 1.8.
+
+NOTE:
+It is of vital importance that you never install libraries directly at the
+system level. Linux, for example, relies on Python for many different
+tasks and operations, and if you fiddle with the system installation
+of Python, you risk compromising the integrity of the whole system
+(guess to whom this happened...). So take this as a rule, such as
+brushing your teeth before going to bed: always, always create a
+virtual environment when you start a new project.
+------------------
+sudo apt install python3-virtualenv	
+
+Creation:
+vb-om@ubuntu-20:~/Desktop$ mkdir python_learning
+vb-om@ubuntu-20:~/Desktop$ virtualenv python_learning
+created virtual environment CPython3.8.10.final.0-64 in 270ms
+  creator CPython3Posix(dest=/home/vb-om/Desktop/python_learning, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, pkg_resources=latest, via=copy, app_data_dir=/home/vb-om/.local/share/virtualenv/seed-app-data/v1.0.1.debian.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+------------------
+Activation:
+When you want to work with it, is to activate it. Activating virtualenv
+basically produces some path juggling behind the scenes so that when you call the
+Python interpreter, you're actually calling the active virtual environment one, instead
+of the mere system one.
+
+-----------------
+vb-om@ubuntu-20:~/Desktop$ source python_learning/bin/activate
+(python_learning) vb-om@ubuntu-20:~/Desktop$
+
+------------------
+Deactivate:
+-------------
+(python_learning) vb-om@ubuntu-20:~/Desktop$ deactivate 
+vb-om@ubuntu-20:~/Desktop$
+-------------
+
+Running Python as a service
+Apart from being run as a script, and within the boundaries of a shell, Python can be
+coded and run as an application. We'll see many examples throughout the book about
+this mode. And we'll understand more about it in a moment, when we'll talk about
+how Python code is organized and run.
+	
+===============================================================
+
+
+How do we use modules and packages?
+
+It would be very bad practice to copy/paste (or, more properly said: duplicate) the
+validation logic in every place where we expect a numeric answer. This would violate
+the don't repeat yourself (DRY) principle, which states that you should never repeat
+the same piece of code more than once in your application. I feel the need to stress the
+importance of this principle: you should never repeat the same piece of code more than once
+in your application (pun intended).
+There are several reasons why repeating the same piece of logic can be very bad, the
+most important ones being:
+	- There could be a bug in the logic, and therefore, you would have to correct
+	  it in every place that the logic is applied.
+	- You may want to amend the way you carry out the validation, and again
+	  you would have to change it in every place it is applied.
+	- You may forget to fix/amend a piece of logic because you missed it when
+	  searching for all its occurrences. This would leave wrong/inconsistent
+	  behavior in your application.
+	- Your code would be longer than needed, for no good reason.
+
+Python is a wonderful language and provides you with all the tools you need to
+apply all the coding best practices. For this particular example, we need to be able to
+reuse a piece of code. To be able to reuse a piece of code, we need to have a construct
+that will hold the code for us so that we can call that construct every time we need to
+repeat the logic inside it. That construct exists, and it's called a function.
+
+
+Python comes with a very extensive library, as I have already said a few pages ago.
+Now, maybe it's a good time to define what a library is: a library is a collection of
+functions and objects that provide functionalities that enrich the abilities of a
+language.
+For example, within Python's math library, we can find a plethora of functions, one of
+which is the factorial function, which of course calculates the factorial of a
+number.
+
+So, if you wanted to use this function in your code, all you would have to do is to
+import it and call it with the right input values. Don't worry too much if input values
+and the concept of calling is not very clear for now; please just concentrate on the
+import part. We use a library by importing what we need from it, and then we use it.
+
+>>> from math import factorial
+>>> factorial(5)
+120
+>>> 
+	
+
+Python's execution model
+In this section, I would like to introduce you to a few very important concepts, such
+as scope, names, and namespaces. You can read all about Python's execution model in
+the official language reference, of course, but I would argue that it is quite technical
+and abstract, so let me give you a less formal explanation first.
+
+Names and namespaces
+>>> n = 3 # integer number
+>>> address = "221b Baker Street, NW1 6XE, London"
+address
+>>> employee = {
+...
+'age': 45,
+...
+'role': 'CTO',
+...
+'SSN': 'AB1234567',
+... }
+>>> # let's print them
+>>> n
+3
+>>> address
+'221b Baker Street, NW1 6XE, London'
+>>> employee
+{'age': 45, 'role': 'CTO', 'SSN': 'AB1234567'}
+>>> other_name
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+NameError: name 'other_name' is not defined
+We defined three objects in the preceding code (do you remember what are the three
+features every Python object has?):
+An integer number n (type: int , value: 3 )
+A string address (type: str , value: Sherlock Holmes' address)
+A dictionary employee (type: dict , value: a dictionary that holds three
+key/value pairs)
+
+So, what are n , address , and employee ? They are names. Names that we can use to
+retrieve data within our code. They need to be kept somewhere so that whenever we
+need to retrieve those objects, we can use their names to fetch them. We need some
+space to hold them, hence: namespaces!
+A namespace is therefore a mapping from names to objects. Examples are the set of
+built-in names (containing functions that are always accessible in any Python
+program), the global names in a module, and the local names in a function. Even the
+set of attributes of an object can be considered a namespace.
+
+The beauty of namespaces is that they allow you to define and organize your names
+with clarity, without overlapping or interference. For example, the namespace
+associated with that book we were looking for in the library can be used to import the
+book itself, like this:
+from library.second_floor.section_x.row_three import book
+We start from the library namespace, and by means of the dot ( . ) operator, we
+walk into that namespace. Within this namespace, we look for second_floor , and
+again we walk into it with the . operator. We then walk into section_x , and finally
+within the last namespace, row_three , we find the name we were looking for: book .
+
+Scopes:
+-------
+According to Python's documentation:
+" A scope is a textual region of a Python program, where a namespace is directly
+accessible.
+
+Scopes are determined statically, but actually, during runtime, they are used
+dynamically. This means that by inspecting the source code, you can tell what the
+scope of an object is, but this doesn't prevent the software from altering that during
+runtime. There are four different scopes that Python makes accessible (not necessarily
+all of them are present at the same time, of course):
+The local scope, which is the innermost one and contains the local names.
+The enclosing scope, that is, the scope of any enclosing function. It contains
+non-local names and also non-global names.
+The global scope contains the global names.
+The built-in scope contains the built-in names. Python comes with a set of
+functions that you can use in an off-the-shelf fashion, such as print , all ,
+abs , and so on. They live in the built-in scope.
+
+The rule is the following: when we refer to a name, Python starts looking for it in the
+current namespace. If the name is not found, Python continues the search to the
+enclosing scope and this continues until the built-in scope is searched. If a name
+hasn't been found after searching the built-in scope, then Python raises a
+NameError exception, which basically means that the name hasn't been defined (you
+saw this in the preceding example).
+
+The order in which the namespaces are scanned when looking for a name is therefore:
+local, enclosing, global, built-in (LEGB).
+
+Objects and classes
+-------------------
+We've already seen that objects are Python's abstraction for data. In fact, everything in
+Python is an object, infact numbers, strings (data structures that hold text), containers,
+collections, even functions. You can think of them as if they were boxes with at least
+three features: an ID (unique), a type, and a value.
+But how do they come to life? How do we create them? How do we write our own
+custom objects? The answer lies in one simple word: classes.
+Objects are, in fact, instances of classes. The beauty of Python is that classes are
+objects themselves, but let's not go down this road. It leads to one of the most
+advanced concepts of this language: metaclasses. For now, the best way for you to get
+the difference between classes and objects is by means of an example.
+
+
